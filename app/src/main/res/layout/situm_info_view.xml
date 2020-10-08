@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<es.situm.maps.library.ui.view.info.InfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/info_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    app:situm_showName="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_go_inside"
+            style="@style/situm_floating_action_button"
+            app:backgroundTint="@color/situm_color_positioning_centered"
+            app:borderWidth="0dp"
+            app:elevation="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:src="@drawable/situm_go_inside"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/situm_toolbar_shadow"/>
+
+        <LinearLayout
+            android:id="@+id/situm_building_info_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight=".1"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/situm_progressbar"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/btn_info"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/info"
+                android:paddingLeft="5dp"
+                android:layout_weight="0.1"
+                android:background="@android:color/white"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/txt_active_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:maxLines="2"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginEnd="90dp"
+                android:textSize="18sp"
+                tools:text="Ed. Emprendia - Situm"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</es.situm.maps.library.ui.view.info.InfoView>

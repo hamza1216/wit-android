@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom">
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recycler_level_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/situm_level_list_border"
+        android:choiceMode="singleChoice"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        tools:layout_height="150dp"
+        tools:listitem="@layout/situm_item_level"/>
+
+</RelativeLayout>

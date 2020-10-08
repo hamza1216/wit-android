@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "929828656414",
+    "firebase_url": "https://wit-cloudadmin.firebaseio.com",
+    "project_id": "wit-cloudadmin",
+    "storage_bucket": "wit-cloudadmin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929828656414:android:f3836a191d53bc34d3e50f",
+        "android_client_info": {
+          "package_name": "com.waterloo.wit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929828656414-0j6luu175r36v1eb1gkf89i79er9332a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKEcU8-otowaoMwC0erotndD1wVHtQUjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929828656414-0j6luu175r36v1eb1gkf89i79er9332a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

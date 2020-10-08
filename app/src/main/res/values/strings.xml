@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">WIT</string>
+
+    <string name="text_password_inform">Enter Password.</string>
+    <string name="text_password_placeholder">Password</string>
+
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="text_gallery">Gallery</string>
+    <string name="text_navigation">Navigation</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_password_confirm">Confirm</string>
+    <string name="text_firstname">First Name</string>
+    <string name="text_lastname">Last Name</string>
+    <string name="text_save">Save</string>
+    <string name="text_invalid_userinfo">Enter all fields.</string>
+    <string name="text_password_notmatcing">Password not matching.</string>
+    <string name="text_alert_confirm">Are you sure to logout?</string>
+    <string name="text_confirm_delete">Are you sure to delete item?</string>
+
+    <string name="menu_search_item">Search for past work items</string>
+    <string name="menu_create_item">Create new work items</string>
+    <string name="menu_realtime_navigation">Real Time Navigation</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="invalid_username">Invalid username!</string>
+    <string name="invalid_password">Password must contain more than 5 characters.</string>
+    <string name="login_failed">Failed to Login</string>
+
+    <string name="nav_header_title">Workitem recording\nand indoor navigation app</string>
+    <string name="nav_header_subtitle">Administrator</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="situm_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/situm_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/situm_colorPrimaryDark</item>
+        <item name="colorAccent">@color/situm_colorAccent</item>
+        <item name="drawerArrowStyle">@style/situm_MyDrawerArrowToggle</item>
+    </style>
+    <style name="situm_AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="situm_AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="situm_AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="situm_AppThemeCalibrationManager" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/situm_light_blue</item>
+        <item name="colorPrimaryDark">@color/situm_colorPrimaryDark</item>
+        <item name="colorAccent">@color/situm_colorAccent</item>
+        <item name="drawerArrowStyle">@style/situm_MyDrawerArrowToggle</item>
+    </style>
+    <style name="situm_AppThemeOfflineCalibrationManager" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/situm_color_positioning_centered</item>
+        <item name="colorPrimaryDark">@color/situm_colorPrimaryDark</item>
+        <item name="colorAccent">@color/situm_colorAccent</item>
+        <item name="drawerArrowStyle">@style/situm_MyDrawerArrowToggle</item>
+    </style>
+    <style name="situm_Calibration"/>
+    <style name="situm_Calibration.Resume"/>
+    <style name="situm_Calibration.Resume.Discard" parent="situm_Dialog.Button">
+        <item name="android:textColor">#f34236</item>
+    </style>
+    <style name="situm_Calibration.Resume.Save" parent="situm_Dialog.Button"/>
+    <style name="situm_Calibration.Resume.Text">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+    <style name="situm_Calibration.Resume.Warn">
+        <item name="srcCompat">@drawable/situm_ic_warning_24dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="situm_Calibration.Resume.item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+    <style name="situm_CustomAlertDialogStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:bottomBright">@android:color/black</item>
+        <item name="android:bottomDark">@android:color/black</item>
+        <item name="android:bottomMedium">@android:color/black</item>
+        <item name="android:centerBright">@android:color/black</item>
+        <item name="android:centerDark">@android:color/black</item>
+        <item name="android:centerMedium">@android:color/black</item>
+        <item name="android:fullBright">@android:color/black</item>
+        <item name="android:fullDark">@android:color/black</item>
+        <item name="android:topBright">@android:color/black</item>
+        <item name="android:topDark">@android:color/black</item>
+    </style>
+    <style name="situm_CustomButton">
+        <item name="android:background">@drawable/situm_level_list_border</item>
+    </style>
+    <style name="situm_Dialog"/>
+    <style name="situm_Dialog.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#01A093</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="situm_Dialog.Error"/>
+    <style name="situm_Dialog.Error.Item">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+    </style>
+    <style name="situm_Dialog.Error.Item.Switch"/>
+    <style name="situm_DrawerMenuItems" parent="situm_AppTheme">
+        <item name="background">@drawable/situm_items_selected</item>
+    </style>
+
+    <style name="situm_MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/black</item>
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>
+    <style name="situm_MyTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/situm_CustomAlertDialogStyle</item>
+        <item name="android:textColorPrimary">#d6d6d6</item>
+    </style>
+    <style name="situm_ThemeSettings" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/situm_color_positioning_centered</item>
+        <item name="colorPrimaryDark">@color/situm_color_positioning_centered</item>
+        <item name="colorAccent">@color/situm_color_positioning_centered</item>
+        <item name="drawerArrowStyle">@style/situm_MyDrawerArrowToggle</item>
+    </style>
+    <style name="situm_ThemeTranslucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/situm_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/situm_colorPrimaryDark</item>
+        <item name="colorAccent">@color/situm_colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="situm_boldText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="situm_fab_labels_style">
+        <item name="android:background">@drawable/situm_fab_label_background</item>
+        <item name="android:textColor">@android:color/background_light</item>
+    </style>
+    <style name="situm_floating_action_button">
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+    <style name="situm_normalText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="situm_toolbarText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#7b7b7b</item>
+    </style>
+    <declare-styleable name="situm_BuildingGoogleMapView"><attr format="boolean" name="situm_showFloorPicker"/></declare-styleable>
+    <declare-styleable name="situm_CalibrationSensorSelector"><attr format="boolean" name="situm_allowUnselection"/></declare-styleable>
+    <declare-styleable name="situm_InfoView"><attr format="boolean" name="situm_showName"/></declare-styleable>
+    <declare-styleable name="situm_SensorInfo"><attr format="integer" name="situm_image"/><attr format="color" name="situm_textColor"/><attr format="color" name="situm_textColorHighlight"/><attr format="integer" name="situm_highLightDuration"/><attr format="boolean" name="situm_flashOnUpdate"/></declare-styleable>
+    <declare-styleable name="situm_SitumMapView"><attr format="boolean" name="situm_has_search_view"/><attr format="reference" name="situm_search_view_placeholder"/><attr format="boolean" name="situm_has_positioning_fab"/><attr format="boolean" name="situm_has_getmetopoi_fab"/><attr format="boolean" name="situm_has_floors_list"/><attr format="boolean" name="situm_has_info_view"/><attr format="boolean" name="situm_use_dashboard_theme"/><attr format="boolean" name="situm_enable_one_building_mode"/><attr format="boolean" name="situm_enable_autostart_positioning"/><attr format="string" name="situm_active_building_id"/></declare-styleable>
+
+    <dimen name="situm_activity_horizontal_margin">16dp</dimen>
+    <dimen name="situm_activity_vertical_margin">16dp</dimen>
+    <dimen name="situm_appbar_padding_top">8dp</dimen>
+    <dimen name="situm_btn_center_pose">16dp</dimen>
+    <dimen name="situm_btn_center_pose_end">4dp</dimen>
+    <dimen name="situm_dialog_info_text">20dp</dimen>
+    <dimen name="situm_dialog_info_title">15dp</dimen>
+    <dimen name="situm_fab_margin">16dp</dimen>
+    <dimen name="situm_fab_no_margin">0dp</dimen>
+    <dimen name="situm_level_list_margin_with_infoview">50dp</dimen>
+    <dimen name="situm_level_list_margin_without_infoview">17dp</dimen>
+    <dimen name="situm_level_selector_height">400dp</dimen>
+    <dimen name="situm_logo_situm_h">42dp</dimen>
+    <dimen name="situm_logo_situm_w">75dp</dimen>
+    <dimen name="situm_margin_pose_button_nav">30px</dimen>
+    <dimen name="situm_nav_header_height">140dp</dimen>
+    <dimen name="situm_nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="situm_num_calibs_padding">-16dp</dimen>
+    <dimen name="situm_space_fragments">56dp</dimen>
+    <dimen name="situm_toast_connection_imageview_size">30dp</dimen>
+    <dimen name="situm_toast_image_marginRight">8dp</dimen>
+    <dimen name="situm_toast_imageview_size">40dp</dimen>
+
+    <string name="situm_accept">Accept</string>
+    <string name="situm_ace_error_empty">The calibration can not be saved because there is no Wifi and Bluetooth</string>
+    <string name="situm_ace_error_not_enough_scans">There is not enough scan points, at least is needed two</string>
+    <string name="situm_ace_error_timeout">Warning: not Wifi and Bluetooth scanned for a long period of time</string>
+    <string name="situm_ace_error_unknow">Unknow error</string>
+    <string name="situm_action_delete_calib">Delete calibration</string>
+    <string name="situm_action_deselect_all">Deselect all</string>
+    <string name="situm_action_settings">Select all</string>
+    <string name="situm_action_sign_in">Sign in or register</string>
+    <string name="situm_action_sign_in_short">Sign in</string>
+    <string name="situm_active_building_floor_not_selected">There is not any level selected</string>
+    <string name="situm_al_change_domain_btn">Change</string>
+    <string name="situm_al_copyright_txt">Copyright © 2019 Situm Technologies, S.L.</string>
+    <string name="situm_al_first_steps_btn">Show me First steps!</string>
+    <string name="situm_al_rookie_tv">New to Indoor Location? Find out how to start!</string>
+    <string name="situm_alert_dialog_message_calibrating">Your calibration will be saved</string>
+    <string name="situm_alert_dialog_message_positioning">The positioning will stop</string>
+    <string name="situm_alert_dialog_title">Do you want to quit?</string>
+    <string name="situm_already_calibrating">Please, stop current calibration first before starting a calibration in a new building</string>
+    <string name="situm_already_positioning">You are in positioning mode. To init calibration mode, please stop positioning first</string>
+    <string name="situm_always_accessible">Only accessible routes</string>
+    <string name="situm_and_then">, and then,</string>
+    <string name="situm_arrived_to_destination">You\'ve arrived to your destination</string>
+    <string name="situm_beacon_scan_placeholder" translatable="false">RSSI: %d dBm, UUID: %s, Major: %d, Minor: %d, ID: %d, Distance: %f m, TX: %d</string>
+    <string name="situm_beacon_scans">Beacon scans</string>
+    <string name="situm_beacons" translatable="false">Beacons</string>
+    <string name="situm_bluetooh">Bluetooth</string>
+    <string name="situm_bluetooth_calibration_button_scan">Scan for devices</string>
+    <string name="situm_bluetooth_calibration_calibration_in_progress">Calibrating…</string>
+    <string name="situm_bluetooth_calibration_connected">Connected</string>
+    <string formatted="false" name="situm_bluetooth_calibration_connected_to">Connected to primary \n%s</string>
+    <string name="situm_bluetooth_calibration_connecting">Connecting…</string>
+    <string name="situm_bluetooth_calibration_device_name">Device\nname:</string>
+    <string name="situm_bluetooth_calibration_devices_connected">Secondaries connected:</string>
+    <string name="situm_bluetooth_calibration_disconnect_and_exit">Disconnect</string>
+    <string name="situm_bluetooth_calibration_disconnect_from_master">Disconnect from master</string>
+    <string name="situm_bluetooth_calibration_discoverable">Discoverable</string>
+    <string name="situm_bluetooth_calibration_make_discoverable">Make visible to the primary</string>
+    <string name="situm_bluetooth_calibration_make_discoverable_description">Click the <b>Make visible to the primary</b> and then go to the <b>primary device</b> and click <b>Search more secondaries</b></string>
+    <string name="situm_bluetooth_calibration_master">Primary</string>
+    <string name="situm_bluetooth_calibration_mode_title">One person - Multiple devices\nCalibration</string>
+    <string name="situm_bluetooth_calibration_none_found">No devices found</string>
+    <string name="situm_bluetooth_calibration_none_paired">No devices have been paired</string>
+    <string name="situm_bluetooth_calibration_not_connected">Not connected</string>
+    <string name="situm_bluetooth_calibration_scan">Search more secondaries</string>
+    <string name="situm_bluetooth_calibration_scanning">Scanning…</string>
+    <string name="situm_bluetooth_calibration_scanning_for_devices">Scanning for devices…</string>
+    <string name="situm_bluetooth_calibration_select_device">Select a device to connect</string>
+    <string name="situm_bluetooth_calibration_selector_summary">Calibrate faster with multiple devices at the same time.\n\nSelect the device mode:\n - <b>Primary</b>: Take it in your hand and use it to calibrate.\n - <b>Secondary</b>: keep it in your pocket and increase the data captured by the principal</string>
+    <string name="situm_bluetooth_calibration_slave">Secondary</string>
+    <string name="situm_bluetooth_calibration_slave_description">In this mode the smartphone will calibrate mirroring the actions in the master device. While paired, you can\'t use the device.</string>
+    <string name="situm_bluetooth_calibration_status">Status:</string>
+    <string name="situm_bluetooth_calibration_title_other_devices">Other Available Devices</string>
+    <string name="situm_bluetooth_calibration_title_paired_devices">Favourite devices</string>
+    <string name="situm_bt_error">Bluetooth scanning not available. Wifi-only positioning</string>
+    <string name="situm_building_id" translatable="false">building_id</string>
+    <string name="situm_building_null">Building is null</string>
+    <string name="situm_building_to_start_positioning_summary">There is no building selected</string>
+    <string name="situm_building_to_start_positioning_title">Select the building you want to start the positioning</string>
+    <string name="situm_cal_man_title">Calibrations</string>
+    <string name="situm_calculating_directions">Calculating directions...</string>
+    <string name="situm_calib_is_null">Calibration is null</string>
+    <string name="situm_calib_not_started">Calibration not started</string>
+    <string name="situm_calib_point_invalid">Calibration point need to be inside the building</string>
+    <string name="situm_calib_steps">\n1) Select the level where you are \n2) Zoom in your area \n3) Start calibration by clicking on your current position</string>
+    <string name="situm_calib_tuto_finish">Finish</string>
+    <string name="situm_calib_tutorial">Calibration tutorial</string>
+    <string name="situm_calib_tutorial_dont_show_again">Don\'t show again</string>
+    <string name="situm_calibrate">Calibrate</string>
+    <string name="situm_calibration_item">Calibration</string>
+    <string name="situm_calibration_null">Calibrating building is null</string>
+    <string name="situm_calibration_resume_beacons">Number of BLE beacons/scans:</string>
+    <string name="situm_calibration_resume_cancel">Discard</string>
+    <string name="situm_calibration_resume_distance">Distance:</string>
+    <string name="situm_calibration_resume_points">Marked points:</string>
+    <string name="situm_calibration_resume_save">Save</string>
+    <string name="situm_calibration_resume_title">Calibration resume</string>
+    <string name="situm_calibration_resume_wifis">Number of WiFi APs/scans:</string>
+    <string formatted="false" name="situm_calibs_in_total">%d calibrations waiting to upload</string>
+    <string name="situm_cancel">Cancel</string>
+    <string name="situm_cancel_calib">Do you want to cancel calibration?</string>
+    <string name="situm_categories">Categories</string>
+    <string name="situm_center" translatable="false">center</string>
+    <string name="situm_center_view">Center view</string>
+    <string formatted="false" name="situm_change_indoor_positioning">Change indoor positioning from %s to %s</string>
+    <string name="situm_change_positioning">Change positioning building?</string>
+    <string name="situm_check_if_device_in_secondary_mode">Check if the other device is in the secondary mode screen.</string>
+    <string name="situm_choose_best">Shortest route</string>
+    <string name="situm_click_to_see_more">Click to see more</string>
+    <string name="situm_close">Close</string>
+    <string name="situm_coarse_location_not_enabled">Enable location to start positioning</string>
+    <string name="situm_compass_best_orientation">Using compass for the best orientation</string>
+    <string name="situm_compass_need_calibrated">Uncalibrated compass. Please, rotate your phone smoothly in order to calibrate it</string>
+    <string name="situm_connecting">Connecting…</string>
+    <string name="situm_connecting_to_secondary_device">Connecting to secondary device</string>
+    <string name="situm_connection_error">Connection error, try again later</string>
+    <string name="situm_cu_custom_dialog_accept">Accept</string>
+    <string name="situm_cu_info_positioning_dialog_not_show">Do not show again</string>
+    <string name="situm_current_snr_value">Current SNR value</string>
+    <string name="situm_custom_route">Custom route</string>
+    <string name="situm_default_value">Default</string>
+    <string name="situm_delete">Delete</string>
+    <string name="situm_description">Description</string>
+    <string name="situm_deselect_all">Deselect all</string>
+    <string name="situm_device_is_discoverable">Device is visible</string>
+    <string name="situm_device_is_discoverable_message">Click &lt;b>Search more secondaries&lt;/b> on the &lt;b>primary device&lt;/b>.&lt;br>&lt;br>This device name is:&lt;br>&lt;b>%s&lt;/b></string>
+    <string name="situm_device_name" translatable="false">&lt;b>%s&lt;/b>&lt;br>(%s)</string>
+    <string name="situm_device_ready_to_calibrate">Now you can lock the screen and start to calibrate in the <b>primary device</b>.</string>
+    <string name="situm_dialog_address_title" translatable="false">Address</string>
+    <string name="situm_dialog_calibration_disabled_message">Calibration is disabled in this building</string>
+    <string name="situm_dialog_calibration_disabled_ok">Got it</string>
+    <string name="situm_dialog_calibration_disabled_title">Calibration disabled</string>
+    <string name="situm_dialog_create_custom_poi_delete_last">If you save a favourite location the last one is gonna be deleted</string>
+    <string name="situm_dialog_create_custom_poi_title">Save a favourite position (in local)</string>
+    <string name="situm_dialog_custom_field_title" translatable="false">Custom fields</string>
+    <string name="situm_dialog_floor_custom_field_title" translatable="false">Floor custom fields</string>
+    <string name="situm_dialog_info_title" translatable="false">Information</string>
+    <string name="situm_dialog_make_visible_message"><b>Important</b>: in the secondary device click <b>Make visible to the primary</b></string>
+    <string name="situm_dialog_make_visible_title">Make visible the secondary device</string>
+    <string name="situm_dialog_poi_category_title" translatable="false">Poi category</string>
+    <string name="situm_dialog_title_filter_layouts">Filter layouts</string>
+    <string name="situm_directions_then">Then</string>
+    <string name="situm_disable_calibration" translatable="false">disable_calibration</string>
+    <string name="situm_disabled">Disabled</string>
+    <string name="situm_disabled_wifi_warning_message">Unfortunatelly, Android 9 imposes limitations that prevent the use of WiFi based indoor positioning</string>
+    <string name="situm_disabled_wifi_warning_title">WiFi based positioning is disabled</string>
+    <string name="situm_distance">Distance</string>
+    <string name="situm_dont_have_account">Need an account? Sign up for free</string>
+    <string name="situm_downloading_buildings">Downloading buildings…</string>
+    <string name="situm_error_connecting">Connection error</string>
+    <string name="situm_error_field_required">This field is required</string>
+    <string name="situm_error_image_resolution">Image is too big. Upload a new one on the dashboard</string>
+    <string name="situm_error_incorrect_password">This password is incorrect</string>
+    <string name="situm_error_invalid_email">This email address is invalid</string>
+    <string name="situm_error_invalid_password">This password is too short</string>
+    <string name="situm_error_loading_buildings">Error loading buildings</string>
+    <string name="situm_error_reloading_data">Error reloading data. Are you connected?</string>
+    <string name="situm_error_reloading_info_no_connection">Error: to refresh info you should be connected to a network</string>
+    <string name="situm_error_retrieving_levels">Error retrieving levels</string>
+    <string name="situm_error_updating_rail_width">Error updating rail width</string>
+    <string name="situm_error_uploading_calibrations_retrying_later">Connection error while uploading calibration data. Retrying in 10 seconds...</string>
+    <string name="situm_error_wifi_throttled_deactivate_ble">Otherwise, you can perform the calibration only with BLE activated.</string>
+    <string name="situm_error_wifi_throttled_faq">Please deactivate this feature in your device <a href="https://situm.freshdesk.com/support/solutions/articles/35000139757-how-to-deactivate-wi-fi-scan-throttling-in-android-10">FAQ</a> and restart the App.</string>
+    <string name="situm_event_take_me_here">Take me there!</string>
+    <string name="situm_exception_wrong_page" translatable="false">Wrong page</string>
+    <string name="situm_favourites_scans">Favourites scans: %d (total: %d)</string>
+    <string name="situm_filter_scans">Filter layouts</string>
+    <string name="situm_filtered_total_scans">Filtered scans: %d (total: %d)</string>
+    <string name="situm_finished_route">Finished route!</string>
+    <string name="situm_finished_route_ok_btn">OK</string>
+    <string name="situm_first_calib_point_null">The first calibration point can not be null</string>
+    <string name="situm_floor">Level</string>
+    <string name="situm_gps_network_not_enabled">Enable high accuracy location to start positioning</string>
+    <string name="situm_gps_network_not_enabled_calibration">Enable high accuracy location to start calibration</string>
+    <string name="situm_graph_between_two_points_not_found">There are no defined routes in the origin and / or destination floor. Check them in the Dashboard</string>
+    <string name="situm_graph_not_found">There is not any path in the building. Add it in Dashboard. </string>
+    <string name="situm_ground_truth_point_outside_building">Ground truth point need to be inside the building</string>
+    <string name="situm_ground_truth_position_not_available_yet">There is not a position to link for the ground truth</string>
+    <string name="situm_header_item_type">Type of view</string>
+    <string name="situm_id" translatable="false">ID</string>
+    <string name="situm_information">Information</string>
+    <string name="situm_invalid_calibration">Invalid calibration</string>
+    <string name="situm_invalid_credentials">Invalid credentials</string>
+    <string name="situm_invalid_custom_point">Invalid point, all points must be inside the building or near</string>
+    <string name="situm_item_calibrate_tutorial">How to calibrate</string>
+    <string name="situm_item_first_steps_tutorial">First Steps</string>
+    <string name="situm_item_map_hybrid">Satellite map</string>
+    <string name="situm_item_map_none">None</string>
+    <string name="situm_item_map_normal">Normal</string>
+    <string name="situm_item_positioning">Positioning</string>
+    <string name="situm_item_route_accessible">Accessible routes</string>
+    <string name="situm_item_route_normal">Conventional</string>
+    <string name="situm_item_settings">Settings</string>
+    <string name="situm_item_tutorials">Tutorials</string>
+    <string formatted="false" name="situm_label_level">Level %s</string>
+    <string name="situm_layout" translatable="false">Layout</string>
+    <string name="situm_legal">Terms of use</string>
+    <string name="situm_list_calib_null">List of calibrations is null</string>
+    <string name="situm_load_map_view">load map view</string>
+    <string name="situm_loading_blueprint">Loading blueprint</string>
+    <string name="situm_log">loggued</string>
+    <string name="situm_login">Login</string>
+    <string name="situm_logout">Logout</string>
+    <string name="situm_mac" translatable="false">MAC</string>
+    <string name="situm_major" translatable="false">Major</string>
+    <string name="situm_make_a_route_to_this_point">Make a route to this point</string>
+    <string name="situm_map_not_reay_please_wait">Map not ready, please wait…</string>
+    <string name="situm_message_building_download_error">Error downloading building model</string>
+    <string name="situm_message_building_with_no_calibrations">This building doesn\'t have calibrations, positioning is not possible</string>
+    <string name="situm_message_confirm_closing_bluetooth_calibration_slave_config">Closing this window you will be disconnected from the primary device</string>
+    <string name="situm_message_directions_not_available_in_outdoor">Navigation is only available indoors</string>
+    <string name="situm_message_positioning_service_already_running">The positioning service is already running. Check if you have another Situm based App running on background</string>
+    <string name="situm_message_revoke_data_treatment_consent">Data treatment consent will be revoked and all the user configuration will be deleted from this device.</string>
+    <string name="situm_minimum_snr_message">Minimum value of SNR to use the value of a satellite</string>
+    <string name="situm_minor" translatable="false">Minor</string>
+    <string name="situm_multidevice_connection_error">Connection error</string>
+    <string name="situm_my_favourite">My favourite</string>
+    <string name="situm_name">Name</string>
+    <string name="situm_navigation_drawer_close">Close navigation drawer</string>
+    <string name="situm_navigation_drawer_open">Open navigation drawer</string>
+    <string name="situm_network_error_uploading_calibrations">Connection error while uploading calibrations data</string>
+    <string name="situm_no">No</string>
+    <string name="situm_no_calib_data">No calibration data found</string>
+    <string name="situm_no_data_available">No buildings? How to create them</string>
+    <string name="situm_no_indoor_data_available">No points of interest available</string>
+    <string name="situm_no_network_available">Network connection not available</string>
+    <string name="situm_no_network_available_try_again_later">No internet connection available, please retry later</string>
+    <string name="situm_no_results_found">No results found</string>
+    <string name="situm_not_a_selected_building">Not a selected Building</string>
+    <string name="situm_not_a_selected_poi">Not a selected POI</string>
+    <string name="situm_not_active_building_positioning">There is not any active building</string>
+    <string name="situm_not_prepared_building">Not prepared building available...</string>
+    <string name="situm_not_using_compass">Compass can not be used due to strong interferences. Orientation may not be accurate</string>
+    <string name="situm_num_calibs" translatable="false">num_calibs</string>
+    <string name="situm_obtaining_pose">Obtaining position… keep walking</string>
+    <string name="situm_obtaining_pose_outdoor">Looking for location</string>
+    <string name="situm_obtaining_position">Obtaining position…</string>
+    <string name="situm_only_not_accessible_floor_changes">Only routes with not accessible floor changes</string>
+    <string name="situm_open_location_settings">Open location settings</string>
+    <string name="situm_operation_required">Enable location needed</string>
+    <string name="situm_override_server_value">Override server value</string>
+    <string name="situm_pas" translatable="false">pass</string>
+    <string name="situm_pass" translatable="false">pass</string>
+    <string name="situm_paths">Paths</string>
+    <string name="situm_pie_wifi_restrictions_message">Unfortunately, Android 9 imposes limitations that prevent WiFi scanning at a realtime rate. Apps are restricted to one scan every 30s.</string>
+    <string name="situm_pie_wifi_restrictions_title">WiFi scanning restrictions in Android 9</string>
+    <string name="situm_popup_calibration_needed_description">Building calibration is required before positioning</string>
+    <string name="situm_popup_calibration_needed_gotit">Got it</string>
+    <string name="situm_popup_calibration_needed_howto">How to calibrate?</string>
+    <string name="situm_popup_calibration_needed_title">The building is not calibrated</string>
+    <string name="situm_popup_calibration_wifi_disabled_button">Disable</string>
+    <string name="situm_popup_calibration_wifi_disabled_text">To start calibration is mandatory to disable Wifi networks, is best to use only mobile networks.</string>
+    <string name="situm_popup_calibration_wifi_disabled_title">Calibration</string>
+    <string name="situm_positioning_stop_on_reload">Positioning will be stopped</string>
+    <string name="situm_pref_accessibility_mode" translatable="false">Accessibility mode</string>
+    <string name="situm_pref_advanced_disable_wifi_while_positioning" translatable="false">pref_advanced_disable_wifi_while_positioning</string>
+    <string name="situm_pref_advanced_disable_wifi_while_positioning_title">Disable WiFi while positioning</string>
+    <string name="situm_pref_advanced_prioritize_indoor" translatable="false">pref_advanced_prioritize_indoor</string>
+    <string name="situm_pref_advanced_prioritize_indoor_summary">Use always indoor position when possible</string>
+    <string name="situm_pref_advanced_prioritize_indoor_title">Prioritize indoor positions over indoor-outdoor</string>
+    <string name="situm_pref_allow_multi_device_calibrations" translatable="false">pref_allow_multi_device_calibrations</string>
+    <string name="situm_pref_always_show_location_bearing" translatable="false">pref_always_show_location_bearing</string>
+    <string name="situm_pref_app_version" translatable="false">pref_app_version</string>
+    <string name="situm_pref_auto_scale_floor_plans" translatable="false">pref_key_auto_scale_floor_plans</string>
+    <string name="situm_pref_battery_saver_key" translatable="false">pref_battery_saver</string>
+    <string name="situm_pref_battery_saver_summary">Enables the battery saver mode when device is idle</string>
+    <string name="situm_pref_battery_saver_title">Battery saver</string>
+    <string name="situm_pref_building_detector_config" translatable="false">situm_pref_building_detector_config</string>
+    <string name="situm_pref_building_server_url" translatable="false">pref_debug_building_server_url</string>
+    <string name="situm_pref_building_to_start_positioning" translatable="false">pref_building_to_start_positioning</string>
+    <string name="situm_pref_calib_record_acc" translatable="false">pref_key_record_acc</string>
+    <string name="situm_pref_calib_record_gyro" translatable="false">pref_key_record_gyro</string>
+    <string name="situm_pref_calib_use_ble" translatable="false">pref_key_bt_enabled</string>
+    <string name="situm_pref_calib_use_wifi" translatable="false">pref_key_wifi_enabled</string>
+    <string name="situm_pref_calibration_auto_upload" translatable="false">pref_automatic_calib_upload</string>
+    <string name="situm_pref_calibration_saved_internal_auto" translatable="false">es.situm.maps.KEY_CALIBRATION_SAVED_INTERNAL_AUTO</string>
+    <string name="situm_pref_camera_latitude" translatable="false">lat</string>
+    <string name="situm_pref_camera_longitude" translatable="false">lng</string>
+    <string name="situm_pref_camera_zoom" translatable="false">zoom</string>
+    <string name="situm_pref_category_positioning" translatable="false">pref_category_positioning</string>
+    <string name="situm_pref_custom_saved_poi" translatable="false">pref_custom_saved_poi</string>
+    <string name="situm_pref_dashboard_server_url" translatable="false">pref_debug_dashboard_server_url</string>
+    <string name="situm_pref_develop">Developer options</string>
+    <string name="situm_pref_device_id" translatable="false">pref_device_id</string>
+    <string name="situm_pref_directions_minimize_floor_changes" translatable="false">pref_directions_minimize_floor_changes</string>
+    <string name="situm_pref_directions_use_route_to_adjust_location" translatable="false">pref_directions_use_route_to_adjust_location</string>
+    <string name="situm_pref_global_calibration_advanced_options" translatable="false">situm_pref_global_calibration_advanced_options</string>
+    <string name="situm_pref_global_navigation_advanced_options" translatable="false">pref_global_navigation_advanced_options</string>
+    <string name="situm_pref_global_pcalibration_advanced_options" translatable="false">pref_global_calibration_advanced_options</string>
+    <string name="situm_pref_global_positioning" translatable="false">pref_global_positioning</string>
+    <string name="situm_pref_global_positioning_advanced_options" translatable="false">pref_global_positinoning_advanced_options</string>
+    <string name="situm_pref_global_positioning_burst_mode" translatable="false">pref_global_positioning_burst_mode</string>
+    <string name="situm_pref_global_positioning_options" translatable="false">situm_pref_global_positioning_options</string>
+    <string name="situm_pref_gprd_msg" translatable="false">pref_gprd_msg_id</string>
+    <string name="situm_pref_ground_truth_key" translatable="false">ground_truth_key</string>
+    <string name="situm_pref_ground_truth_summary">It permits to show which is the real position over the map</string>
+    <string name="situm_pref_ground_truth_title">Use ground truth</string>
+    <string name="situm_pref_ignore_low_quality_locations" translatable="false">situm_pref_ignore_low_quality_locations</string>
+    <string name="situm_pref_ignore_wifi_throttling" translatable="false">pref_ignore_wifi_throttling</string>
+    <string name="situm_pref_info_positioning">To apply these settings, it is necessary to reset the positioning</string>
+    <string name="situm_pref_key_auto_bluetooth" translatable="false">situm_pref_key_auto_bluetooth</string>
+    <string name="situm_pref_key_burst_interval" translatable="false">pref_key_burst_interval</string>
+    <string name="situm_pref_key_calibration_setting" translatable="false">pref_key_calibration_setting</string>
+    <string name="situm_pref_key_minimun_snr" translatable="false">pref_key_minimun_snr</string>
+    <string name="situm_pref_key_snr_interval_minimun" translatable="false">pref_key_snr_interval_minimun</string>
+    <string name="situm_pref_last_user_email" translatable="false">last_user_email</string>
+    <string name="situm_pref_load_loc_proto_sim" translatable="false">pref_load_loc_proto_sim</string>
+    <string name="situm_pref_loc_proto_sim_path" translatable="false">pref_loc_proto_sim_path</string>
+    <string name="situm_pref_minimum_snr" translatable="false">pref_minimum_snr</string>
+    <string name="situm_pref_navigation_distance_to_change_floor" translatable="false">pref_navigation_distance_to_change_floor</string>
+    <string name="situm_pref_navigation_distance_to_goal" translatable="false">pref_navigation_distance_to_goal</string>
+    <string name="situm_pref_navigation_distance_to_next_indication" translatable="false">pref_navigation_distance_to_next_indication</string>
+    <string name="situm_pref_navigation_indications_interval" translatable="false">situm_pref_navigation_indications_interval</string>
+    <string name="situm_pref_navigation_outside_route_threshold" translatable="false">situm_pref_navigation_exit_threshold</string>
+    <string name="situm_pref_navigation_round_indications" translatable="false">situm_pref_navigation_route_indications</string>
+    <string name="situm_pref_navigation_settings" translatable="false">pref_navigation_settings</string>
+    <string name="situm_pref_navigation_time_first_indication" translatable="false">situm_pref_navigation_time_first_indication</string>
+    <string name="situm_pref_navigation_time_ignore_plant_changes" translatable="false">situm_pref_navigation_time_ignore_plant_changes</string>
+    <string name="situm_pref_need_compass_calib" translatable="false">need_compass_calib</string>
+    <string name="situm_pref_paint_route_with_solid_pattern" translatable="false">pref_paint_route_with_solid_pattern</string>
+    <string name="situm_pref_paint_route_with_solid_pattern_summary">Use solid line pattern instead of the dotted pattern</string>
+    <string name="situm_pref_paint_route_with_solid_pattern_title">Paint route with a solid line</string>
+    <string name="situm_pref_posit_use_barometer" translatable="false">pref_key_barometer_pos</string>
+    <string name="situm_pref_posit_use_barometer_summary">Improves the precision in floor changes</string>
+    <string name="situm_pref_posit_use_barometer_title">Use barometer for location</string>
+    <string name="situm_pref_posit_use_ble" translatable="false">pref_key_bt_pos</string>
+    <string name="situm_pref_posit_use_ble_title">Use BLE for location</string>
+    <string name="situm_pref_posit_use_camera" translatable="false">pref_key_camera_pos</string>
+    <string name="situm_pref_posit_use_camera_summary">(EXPERIMENTAL) Enable the camera to improve the quality of the location</string>
+    <string name="situm_pref_posit_use_camera_title">Use camera for indoor location</string>
+    <string name="situm_pref_posit_use_compass" translatable="false">pref_key_compass_pos</string>
+    <string name="situm_pref_posit_use_compass_summary">It is not recommended to turn it off unless the sensor is not working properly</string>
+    <string name="situm_pref_posit_use_compass_title">Use compass for location</string>
+    <string name="situm_pref_posit_use_gps" translatable="false">pref_key_gps_pos</string>
+    <string name="situm_pref_posit_use_gps_summary">Improves indoor positioning on open spaces</string>
+    <string name="situm_pref_posit_use_gps_title">Use GPS for indoor location</string>
+    <string name="situm_pref_posit_use_gyro" translatable="false">pref_key_gyro_pos</string>
+    <string name="situm_pref_posit_use_gyro_summary">It is not recommended to turn it off unless the sensor is not working properly</string>
+    <string name="situm_pref_posit_use_gyro_title">Use gyro for location</string>
+    <string name="situm_pref_posit_use_wifi" translatable="false">pref_key_wifi_pos</string>
+    <string name="situm_pref_posit_use_wifi_title">Use WIFI for location</string>
+    <string name="situm_pref_realtime_upload_interval" translatable="false">pref_realtime_update_interval</string>
+    <string name="situm_pref_reset_preferences" translatable="false">pref_reset_preferences</string>
+    <string name="situm_pref_revoke_data_treatment_consent" translatable="false">pref_revoke_data_treatment_consent</string>
+    <string name="situm_pref_server_mode" translatable="false">pref_server_mode</string>
+    <string name="situm_pref_show_bluetooth_calibration" translatable="false">pref_show_bluetooth_calibration</string>
+    <string name="situm_pref_show_calibration_video" translatable="false">show_calibration_video</string>
+    <string name="situm_pref_show_calibrations_manager" translatable="false">pref_show_calibrations_manager</string>
+    <string name="situm_pref_show_debug_positioning_info" translatable="false">pref_show_debug_positioning_info</string>
+    <string name="situm_pref_show_geofences" translatable="false">pref_show_geofences</string>
+    <string name="situm_pref_show_indications" translatable="false">pref_show_indications</string>
+    <string name="situm_pref_show_sensors_info" translatable="false">pref_key_show_sensors_info</string>
+    <string name="situm_pref_simulated_location_summary">No file selected</string>
+    <string name="situm_pref_smallest_displacement" translatable="false">pref_smallest_displacement</string>
+    <string name="situm_pref_start_location_automatically" translatable="false">pref_start_location_automatically</string>
+    <string name="situm_pref_summary_auto_bluetooth">Turn on bluetooth again when user turns it off during positioning</string>
+    <string name="situm_pref_support_mode" translatable="false">pref_support_mode</string>
+    <string name="situm_pref_text_to_speech" translatable="false">pref_text_to_speech</string>
+    <string name="situm_pref_title_advanced_options">Advanced Settings</string>
+    <string name="situm_pref_title_auto_bluetooth">Activate bluetooth automatically</string>
+    <string name="situm_pref_updates_interval" translatable="false">pref_send_interval</string>
+    <string name="situm_pref_use_dead_reckoning" translatable="false">use_dead_reckoning</string>
+    <string name="situm_pref_use_fake_locations" translatable="false">pref_use_fake_locations</string>
+    <string name="situm_pref_use_foreground_service" translatable="false">pref_use_foreground_service</string>
+    <string name="situm_pref_use_global_loation_custom_value" translatable="false">pref_use_global_loation_custom_value</string>
+    <string name="situm_pref_use_organization_theme" translatable="false">pref_use_organization_theme</string>
+    <string name="situm_pref_use_simulated_locations" translatable="false">pref_use_simulated_locations</string>
+    <string name="situm_pref_user_email" translatable="false">user</string>
+    <string name="situm_pref_user_logged" translatable="false">loggued</string>
+    <string name="situm_pref_user_password" translatable="false">pass</string>
+    <string name="situm_pref_user_password_is_apikey" translatable="false">is_apikey</string>
+    <string name="situm_preference_show_tutorial" translatable="false">view_tutorial</string>
+    <string name="situm_prompt_email">Email</string>
+    <string name="situm_prompt_password">Password</string>
+    <string name="situm_rail_width">Path width</string>
+    <string name="situm_realtime">Show Real Time</string>
+    <string name="situm_register_now">Join now!</string>
+    <string name="situm_register_situm" translatable="false">https://dashboard.situm.es/accounts/register</string>
+    <string name="situm_remove_calib">Remove calibration permanently?</string>
+    <string name="situm_reset_preferences">Reset to default settings</string>
+    <string name="situm_route_error">Failed to calculate the route</string>
+    <string name="situm_route_no_paths_in_building">Navigation is not available. The building doesn\'t have paths.</string>
+    <string name="situm_route_not_found">Route not found</string>
+    <string name="situm_rssi" translatable="false">RSSI</string>
+    <string name="situm_save">Save</string>
+    <string name="situm_save_calib">Save calibration?</string>
+    <string name="situm_save_map_view">save map view</string>
+    <string name="situm_save_msg_calib">Save the current calibration</string>
+    <string name="situm_search_hint">Search on Situm Mapping Tool</string>
+    <string name="situm_search_title">Search</string>
+    <string name="situm_search_view_buildings">Buildings</string>
+    <string name="situm_search_view_indoor_pois">Indoor Pois</string>
+    <string name="situm_select_a_tutorial">Select a Tutorial</string>
+    <string name="situm_select_all">Select all</string>
+    <string name="situm_sensor_info_title">Sensors info</string>
+    <string name="situm_sensor_relevant_info">Show sensor relevant info on top of screen</string>
+    <string name="situm_server_mode_cloud">Cloud</string>
+    <string name="situm_server_mode_hybrid">Hybrid</string>
+    <string name="situm_server_mode_inphone">InPhone</string>
+    <string name="situm_settings">Settings</string>
+    <string name="situm_show_all">Show all scans</string>
+    <string name="situm_show_favourites">Show favourites</string>
+    <string name="situm_show_sensor_info">Show sensors info</string>
+    <string name="situm_situm_cal_man_null">Situm calibration manager is null</string>
+    <string name="situm_skip_event">Got it!</string>
+    <string name="situm_snr_info">Quality of GPS signal</string>
+    <string name="situm_ssid" translatable="false">SSID</string>
+    <string name="situm_start_location_automatically_summary">Start the positioning when the app starts</string>
+    <string name="situm_start_location_automatically_title">Start the positioning when the app starts</string>
+    <string name="situm_start_positioning_snr">Plase start positioning in order to see current SNR value</string>
+    <string name="situm_starting">Starting</string>
+    <string name="situm_stop_to_reload_message">The positioning need to be stopped in order to reload the building data. When the reload is completed you can start again the positioning with the updated building</string>
+    <string name="situm_summary_accessibility_mode">Defines the route accessibility mode</string>
+    <string name="situm_summary_allow_multi_device_calibrations">Show multi-device calibrations button</string>
+    <string name="situm_summary_auto_scale_floor_plans">Auto-scale floor plans</string>
+    <string name="situm_summary_building_url">Positioning URL</string>
+    <string name="situm_summary_burst_interval">GPS scan interval</string>
+    <string name="situm_summary_dashboard_server_url">App restarting is needed</string>
+    <string name="situm_summary_dead_reckoning">Receive intermediate position updates, based on the internal sensors of the device, to improve the user experience.</string>
+    <string name="situm_summary_directions_minimize_floor_changes">Routes that minimize floor changes will be calculated even if the route is longer</string>
+    <string name="situm_summary_directions_use_route_to_adjust_location">When enabled routes are used to improve location engine</string>
+    <string name="situm_summary_global_location_parameters">SNR value that is considered outdoor the position</string>
+    <string name="situm_summary_global_positioning">Allow position in outsides use GPS </string>
+    <string name="situm_summary_global_positioning_burst_mode">Improve precision but consume more battery</string>
+    <string name="situm_summary_ignore_low_quality_locations">Improve navigation ignoring low quality location updates</string>
+    <string name="situm_summary_load_loc_proto_sim">Load loc.proto.sim to simulate positions</string>
+    <string name="situm_summary_navigation_distance_to_change_floor">Distance threshold from when a floor change is considered reached</string>
+    <string name="situm_summary_navigation_distance_to_goal">Distance threshold from when the destination is considered reached</string>
+    <string name="situm_summary_navigation_distance_to_next_indication">Distance threshold from when the next indication is considered reached</string>
+    <string name="situm_summary_navigation_indications_interval">Time interval between sending an indication and the next</string>
+    <string name="situm_summary_positioning_advanced_options">Use gyro, use compass, use barometer... </string>
+    <string name="situm_summary_pref_always_show_location_bearing">Show always the indoor locations with bearing even with low bearing quality</string>
+    <string name="situm_summary_pref_ignore_wifi_throttling">The WiFi scan interval will be the normal and if throttling is detected it will change to one scan every 30 seconds</string>
+    <string name="situm_summary_pref_navigation_outside_route_threshold">Distance to which the user is considered to have left the route</string>
+    <string name="situm_summary_pref_navigation_round_indications">Round the distances of the indications</string>
+    <string name="situm_summary_pref_navigation_time_first_indication">Time to show the first indication</string>
+    <string name="situm_summary_pref_navigation_time_ignore_plant_changes">Wait time before recalculating the route</string>
+    <string name="situm_summary_pref_use_foreground_service">Prevents positioning from being stopped when the application is in background</string>
+    <string name="situm_summary_realtime_upload_interval">Upload interval realtime to Situm cloud</string>
+    <string name="situm_summary_show_calibrations_manager">(Beta) Enable button to show calibration screen</string>
+    <string name="situm_summary_show_indications">Show indications in the screen top</string>
+    <string name="situm_summary_show_positioning_info">Show the WiFi, BLE scans and SNR value (only in global mode)</string>
+    <string name="situm_summary_simplified_navigation">Recommended settings will be activated in order to get a simplified navigation and in the same time satisfactory</string>
+    <string name="situm_summary_smallest_displacement">In meters (need positioning restart)</string>
+    <string name="situm_summary_support_mode">Use only in communication with Situm support team</string>
+    <string name="situm_summary_updates_interval">Put the value in seconds (need positioning restart)</string>
+    <string name="situm_summary_use_fake_locations">Long press on the map to create</string>
+    <string name="situm_summary_use_organization_theme">Customize the app with account logo and colors defined in the Dashboard when the option is enabled. Application will be reloaded.</string>
+    <string name="situm_summary_use_simulated_locations" translatable="false">Use a loc.proto.sim file to simulate locations</string>
+    <string name="situm_tap_on_connect_to_search_devices"><b>Important</b>: make sure that the secondaries are visible.</string>
+    <string name="situm_tap_on_the_device_to_connect">Tap on the device to connect:</string>
+    <string name="situm_the_device_has_been_disconnected">Connection error: the device %s has been disconnected</string>
+    <string name="situm_title_accessibility_mode">Accessibility mode</string>
+    <string name="situm_title_activity_drawer">DrawerActivity</string>
+    <string name="situm_title_activity_model_overview">Positioning model overview</string>
+    <string name="situm_title_advanced">Display and Advanced settings</string>
+    <string name="situm_title_allow_multi_device_calibrations">Allow multi-device calibrations </string>
+    <string name="situm_title_auto_calib_upload">Upload calibrations automatically</string>
+    <string name="situm_title_auto_scale_floor_plans">Auto-scale floor plans in order to improve performance. It is only recommended to disable it on high-end devices. Application will be reloaded.</string>
+    <string name="situm_title_bt_enabled">Record BLE</string>
+    <string name="situm_title_building_server">Building server</string>
+    <string name="situm_title_building_server_url">Building URL(with http://)</string>
+    <string name="situm_title_burst_interval">GPS scan interval</string>
+    <string name="situm_title_calibration">Calibration</string>
+    <string name="situm_title_dashboard_server">Dashboard</string>
+    <string name="situm_title_dashboard_server_url">Dashboard URL</string>
+    <string name="situm_title_dead_reckoning">Dead Reckoning</string>
+    <string name="situm_title_device_id">Device ID</string>
+    <string name="situm_title_directions_minimize_floor_changes">Minimize floor changes</string>
+    <string name="situm_title_directions_not_available">Directions not available outdoors</string>
+    <string name="situm_title_directions_use_route_to_adjust_location">Use routes to adjust location</string>
+    <string name="situm_title_error_wifi_throttled">Calibration has been  canceled due to WIFI scan throttling detected.</string>
+    <string name="situm_title_global_location_parameters">Advanced Global Location Detection Config </string>
+    <string name="situm_title_global_pos">Global positioning</string>
+    <string name="situm_title_global_positioning">Enable indoor/outdoor location</string>
+    <string name="situm_title_global_positioning_burst_mode">Continuous Mode</string>
+    <string name="situm_title_gprd_msg">Privacy Policy and Legal Notice</string>
+    <string name="situm_title_ignore_low_quality_locations">Ignore low quality locations</string>
+    <string name="situm_title_indoor_outdoor_pos">Indoor/outdoor positioning</string>
+    <string name="situm_title_indoor_pos">Indoor positioning</string>
+    <string name="situm_title_item_map_view">Map view</string>
+    <string name="situm_title_load_loc_proto_sim">Open browser to select simulation file</string>
+    <string name="situm_title_loc_proto_sim_path">Simulated positions file</string>
+    <string name="situm_title_location_simulator">Locations simulator</string>
+    <string name="situm_title_minimum_snr">Minimum SNR</string>
+    <string name="situm_title_navigation">Routes and Navigation</string>
+    <string name="situm_title_navigation_distance_to_change_floor">Distance to change floor</string>
+    <string name="situm_title_navigation_distance_to_goal">Distance to arrive destination</string>
+    <string name="situm_title_navigation_distance_to_next_indication">Distance to next indication</string>
+    <string name="situm_title_navigation_indications_interval">Indications interval</string>
+    <string name="situm_title_navigation_settings">Simplified navigation</string>
+    <string name="situm_title_positioning">Positioning</string>
+    <string name="situm_title_pref_always_show_location_bearing">Always show indoor locations with bearing</string>
+    <string name="situm_title_pref_ignore_wifi_throttling">Ignore the WiFi throttling during the positioning in Android 10</string>
+    <string name="situm_title_pref_navigation_outside_route_threshold">Outside Route Threshold</string>
+    <string name="situm_title_pref_navigation_round_indications">Round indications</string>
+    <string name="situm_title_pref_navigation_time_first_indication">Time to return the first indication</string>
+    <string name="situm_title_pref_navigation_time_ignore_plant_changes">Time to ignore unexpected plant changes</string>
+    <string name="situm_title_pref_use_foreground_service">Use a foreground service</string>
+    <string name="situm_title_realtime_upload_interval">Interval to upload locations to Realtime</string>
+    <string name="situm_title_record_acc">Record Accelerometer</string>
+    <string name="situm_title_record_gyro">Record Gyroscope</string>
+    <string name="situm_title_revoke_data_treatment_consent">Revoke data treatment consent</string>
+    <string name="situm_title_route_type">Route</string>
+    <string name="situm_title_show_calibrations_manager">Show the calibrations manager</string>
+    <string name="situm_title_show_geofences">Show geofences over the map</string>
+    <string name="situm_title_show_indications">Show indications during navigation</string>
+    <string name="situm_title_show_positioning_info">Show debug positioning info</string>
+    <string name="situm_title_situm_calibration_preference">Calibration settings</string>
+    <string name="situm_title_situm_dev_preference">Developer settings</string>
+    <string name="situm_title_situm_display_advanced_preference">Display and advanced settings</string>
+    <string name="situm_title_situm_navigation_preference">Navigation settings</string>
+    <string name="situm_title_situm_positioning_preference">Positioning settings</string>
+    <string name="situm_title_smallest_displacement">Locations updates smallest displacement</string>
+    <string name="situm_title_support_mode">Support mode</string>
+    <string name="situm_title_text_to_speech">Indications with sounds enabled</string>
+    <string name="situm_title_updates_interval">Update locations interval</string>
+    <string name="situm_title_use_fake_locations">Use fake locations</string>
+    <string name="situm_title_use_organization_theme">Use account theme</string>
+    <string name="situm_title_use_simulated_locations">Use simulated locations</string>
+    <string name="situm_title_version">Version</string>
+    <string name="situm_title_wifi_enabled">Record WIFI</string>
+    <string name="situm_toast_error_could_not_retrieve_organization_theme">Error: could not retrieve the organization theme</string>
+    <string name="situm_toast_error_not_custom_theme_defined">Error: not custom theme defined in Dashboard</string>
+    <string name="situm_toast_location_permission">Application won\'t work without the Location permission</string>
+    <string name="situm_toast_mesage_building_not_found">Building not found</string>
+    <string name="situm_toast_message_loading_poi">Loading POI…</string>
+    <string name="situm_toast_message_log_in_and_try_again">Log in and try again</string>
+    <string name="situm_toast_message_poi_not_found">POI not found</string>
+    <string name="situm_toast_message_wifi_should_be_disabled">The WiFi should be disabled during positioning. You can change this behaviour in the settings.</string>
+    <string name="situm_toast_no_global_location">The Google location service is unable to return a location. Please keep walking or disable the indoor/outdoor mode</string>
+    <string name="situm_toast_setting_default_theme">Configurando tema por defecto…</string>
+    <string name="situm_toast_setting_organization_theme">Configurando tema de organización…</string>
+    <string name="situm_toast_text_copy_deviceid">Device Id copied</string>
+    <string name="situm_toast_text_gps">GPS</string>
+    <string name="situm_toast_text_h_conn">Very good connection</string>
+    <string name="situm_toast_text_inphone">Inphone</string>
+    <string name="situm_toast_text_l_connection">Bad connection</string>
+    <string name="situm_toast_text_m_connection">Good connection</string>
+    <string name="situm_toast_text_no_connection">No connection</string>
+    <string name="situm_toast_user_without_buildings">You don\'t have buildings. Create one first</string>
+    <string name="situm_total_scans">Total scans: %d</string>
+    <string name="situm_tx" translatable="false">TX</string>
+    <string name="situm_txt_fecha_calib">Creation date</string>
+    <string name="situm_txt_tamano_calib">Size</string>
+    <string name="situm_txt_time_calib">Time</string>
+    <string name="situm_update">Update</string>
+    <string name="situm_user" translatable="false">user</string>
+    <string name="situm_user_not_in_building">User not in building, no position available</string>
+    <string name="situm_uuid" translatable="false">UUID</string>
+    <string name="situm_welcome">Welcome</string>
+    <string name="situm_wi_fi" translatable="false">Wi-Fi</string>
+    <string name="situm_wifi">WiFi</string>
+    <string name="situm_wifi_not_optimal">Disable WiFi to achieve the highest accuracy</string>
+    <string name="situm_wifi_scan_placeholder" translatable="false">RSSI: %d dBm, MAC: %s, ID: %d, SSID: %s</string>
+    <string name="situm_wifi_scans">Wi-Fi scans</string>
+    <string name="situm_yes">Yes</string>
+    <string name="situm_zoom" translatable="false">zoom</string>
+
+    <!--
+    Situm template colors
+    -->
+    <color name="cardview_shadow_start_color">#37000000</color>
+
+    <color name="situm_black_semi_transparent">#B2000000</color>
+    <color name="situm_calibration_info_view_background">#f0a4a4a4</color>
+    <color name="situm_colorAccent">#5b5b5b</color>
+    <color name="situm_colorPrimary">#ffffff</color>
+    <color name="situm_colorPrimaryDark">#545454</color>
+    <color name="situm_color_positioning_centered">#ff0073ff</color>
+    <color name="situm_danger_color">#e74c3c</color>
+    <color name="situm_dark_blue">#0075c9</color>
+    <color name="situm_dark_gray">#3c3c3b</color>
+    <color name="situm_default_color">#b2b2b2</color>
+    <color name="situm_green">#33CC00</color>
+    <color name="situm_indications_background">#fff</color>
+    <color name="situm_info_color">#ff8c00</color>
+    <color name="situm_lightGreen">#99FF33</color>
+    <color name="situm_light_blue">#00a1df</color>
+    <color name="situm_light_gray">#b2b2b2</color>
+    <color name="situm_next_indication_background">#eee</color>
+    <color name="situm_orange">#ff8c00</color>
+    <color name="situm_primary_color">#00a1df</color>
+    <color name="situm_red">#e74c3c</color>
+    <color name="situm_secondary_color">#0075c9</color>
+    <color name="situm_sensor_scanned">#64dd17</color>
+    <color name="situm_success_color">#33CC00</color>
+    <color name="situm_warning_color">#FFCC00</color>
+    <color name="situm_yellow">#FFCC00</color>
+</resources>

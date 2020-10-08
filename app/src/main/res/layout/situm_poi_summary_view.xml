@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/geofenceFloatingButton"
+        style="@style/situm_floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:src="@drawable/situm_building"
+        android:visibility="visible"
+        app:backgroundTint="@color/white_color"
+        app:borderWidth="0dp"
+        app:elevation="3dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/navigationFloatingButton"
+        style="@style/situm_floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="70dp"
+        android:clickable="true"
+        android:src="@drawable/situm_walking"
+        android:visibility="visible"
+        app:backgroundTint="@color/situm_color_positioning_centered"
+        app:borderWidth="0dp"
+        app:elevation="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/poi_summary_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:visibility="visible"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/situm_toolbar_shadow"/>
+
+        <ImageButton
+            android:id="@+id/btn_info"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            app:srcCompat="@drawable/info"
+            android:background="@android:color/white"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/poi_summary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/btn_info"
+            android:layout_toRightOf="@id/btn_info"
+            android:gravity="center_vertical"
+            android:layout_marginRight="90dp"
+            android:layout_marginEnd="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_poi_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Situm Tech"/>
+
+            <TextView
+                android:id="@+id/txt_poi_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="2dp"
+                android:textSize="16sp"
+                tools:text="Ed. Emprendia - Situm / Floor 2"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

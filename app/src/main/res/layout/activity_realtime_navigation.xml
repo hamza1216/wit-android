@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.waterloo.wit.fragment.TouchableMapFragment"/>
+
+    <!--for info view-->
+    <include
+        android:id="@+id/layout_info_view"
+        layout="@layout/situm_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/positionFloatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_info_view"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/situm_ic_action_no_positioning"
+        app:backgroundTint="@android:color/white"
+        app:elevation="3dp"
+        app:fabSize="normal"/>
+    <Button
+        android:id="@+id/navigation_center_view"
+        style="@style/situm_CustomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/layout_info_view"
+        android:drawableLeft="@drawable/situm_comeback_route"
+        android:drawableStart="@drawable/situm_comeback_route"
+        android:padding="8dp"
+        android:text="@string/situm_center_view"
+        android:drawablePadding="10dp"
+        android:textColor="@color/situm_color_positioning_centered"
+        android:textSize="14sp"
+        android:textStyle="normal"/>
+
+    <!-- for POI View -->
+    <include
+        layout="@layout/situm_poi_summary_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"/>
+
+    <!-- for Route View -->
+    <include
+        android:id="@+id/layout_route_view"
+        layout="@layout/situm_route_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+
+    <!--for level picker-->
+    <include
+        android:id="@+id/layout_floor_level_list"
+        layout="@layout/situm_fragment_level_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/situm_level_selector_height"
+        android:layout_marginBottom="@dimen/spacing_30dp"
+        android:layout_above="@id/layout_info_view" />
+
+    <!--for search view-->
+    <include
+        android:id="@+id/layout_search_view"
+        layout="@layout/situm_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+    <!--for mode picker-->
+    <include
+        android:id="@+id/layout_viewitem_list"
+        layout="@layout/situm_fragment_viewitem_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout_search_view" />
+    <!--
+    <include
+        android:id="@+id/llProgressBar"
+        android:visibility="gone"
+        layout="@layout/layout_progress_bar_with_text"/>
+        -->
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e88e5</color>
+    <color name="colorPrimaryDark">#005cb2</color>
+    <color name="colorAccent">#005cb2</color>
+
+    <color name="textTitle">#FFFFFF</color>
+    <color name="textFg">#000000</color>
+    <color name="textBg">#FFFFFF</color>
+    <!--
+        dark blue - r: 8, g: 102, b: 169
+
+        medium blue - r: 97, g: 159, b: 214
+
+        light blue - r: 192, g: 217, b: 239
+        -->
+    <color name="darkBlue">#0866A9</color>
+    <color name="mediumBlue">#619FD6</color>
+    <color name="lightBlue">#C0D9EF</color>
+    <color name="light_yellow">#fcff36</color>
+    <color name="light_green">#5eff74</color>
+
+    <color name="my_action_bar_bg">#ff9ebe5b</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="bread_color">#cc8d11</color>
+    <color name="controlcolor">#464646</color>
+    <color name="black_color">#000000</color>
+    <color name="text_color">#C9C</color>
+    <color name="secondary_text_color">#ff8f3d45</color>
+    <color name="light_text_color">#fff</color>
+    <color name="facebook_gradient_start_color">#ff104ae0</color>
+    <color name="facebook_gradient_end_color">#ff0f2b89</color>
+    <color name="light_background_color">#fff</color>
+    <color name="red_color">#f44336</color>
+    <color name="red_dark_color">#ce0404</color>
+    <color name="red_light_color">#fffb7272</color>
+    <color name="green_background_color">#ff35b979</color>
+    <color name="online_status_color">#35b979</color>
+    <color name="background_end_gradient_color">#ffa1000a</color>
+    <color name="solid_dark_color">#760009</color>
+    <color name="dark_text_color">#ff3d3e40</color>
+    <color name="dark_hint_text_color">#ff737476</color>
+    <color name="alizarin">#e74c3c</color>
+    <color name="alizarin_second">#e78172</color>
+    <color name="green">#27ae60</color>
+    <color name="green_second">#2dd176</color>
+    <color name="facebook">#3b5998</color>
+    <color name="facebook_second">#4773be</color>
+    <color name="gray">#d0d0d0</color>
+    <color name="gray_second">#8d8d8d</color>
+    <color name="orange">#ffa81d</color>
+    <color name="progress_color">#35c2f7</color>
+    <color name="yello_color">#ffff00</color>
+    <color name="white_color">#ffffff</color>
+
+    <color name="content_page">#F2F2F2</color>
+    <color name="gray_bg">#E5E5E5</color>
+
+    <color name="default_waveform">#ffff66</color>
+    <color name="default_waveformFill">#80FFC0</color>
+    <color name="default_playback_indicator">#ffff66</color>
+    <color name="default_background">#000000</color>
+
+    <color name="status_hearing">#7B1FA2</color>
+    <color name="status_not_hearing">#757575</color>
+
+    <color name="hairlineColor">#33333326</color>
+    <color name="rowOddColor">#80F6F6F6</color>
+    <color name="rowEvenColor">#80EAEAEA</color>
+
+</resources>
